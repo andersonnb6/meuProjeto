@@ -1,0 +1,343 @@
+
+/* 
+############################################################################################
+
+Fonte em caso de falha com a fonte do google
+
+############################################################################################
+*/
+
+body{
+	font-family: 'Roboto', sans-serif;
+	color: #333;
+}
+
+/* 
+############################################################################################
+
+O que deve ser feito com os links
+
+############################################################################################
+*/
+
+a:link, a:active, a:visited{
+	color: #315e8a;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+/* 
+############################################################################################
+
+Grid
+
+############################################################################################
+*/
+
+/* Ajustando um grid 960px */
+.linha{
+	width: 960px;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 5px 0;
+}
+
+.coluna{
+	padding: 0 10px;
+	float: left;
+}
+
+.col1{
+	width: 60px;
+}
+.col2{
+	width: 140px;
+}
+.col3{
+	width: 220px;
+}
+.col4{
+	width: 300px;
+}
+.col5{
+	width: 380px;
+}
+.col6{
+	width: 460px;
+}
+.col7{
+	width: 540px;
+}
+.col8{
+	width: 620px;
+}
+.col9{
+	width: 700px;
+}
+.col10{
+	width: 780px;
+}
+.col11{
+	width: 860px;
+}
+.col12{
+	width: 940px;
+}
+
+/* 
+############################################################################################
+
+Ajustes de ordem geral
+
+############################################################################################
+*/
+
+/* Removendo marcadores de listas */
+ul.sem-marcador{
+	list-style: none;
+}
+
+/* Transformando lista em linha */
+ul.inline li{
+	display: inline;
+}
+
+/* Garantindo que a imagem terá tamanho original */
+/* E que não ultrapasse as margens estabelecidas para o conteudo */
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+a.botao, input.botao{
+	background: #0052cc;
+	padding:15px 15px;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+	margin: 5px 0;
+	display: inline-block;
+	border:none;
+}
+
+a.botao:hover, input.botao:hover{
+	background: #044fbf;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5{
+	color: #253858;
+}
+
+/* 
+############################################################################################
+
+Ajusdanto cabecalho, logotipo e menu
+
+############################################################################################
+*/
+
+/* Cor do cabecalho */
+.cabecalho{
+	background: #f4f5f7;
+}
+
+/* Fonte do Logotipo  */
+nav.logo a{
+	color: #253858;
+	text-decoration: none;
+}
+
+/* Alinhando menú a direita e no centro da altura*/
+.menu{
+	text-align: right;
+	margin: 30px 0;
+}
+
+/* Encostando ultimo item do menu na margem direita */
+/* Retirando Margem da direita dele */
+ul.menu li:last-child{
+	margin-right: 0;
+}
+
+/* Adicionando bordas para receber efeito */
+.menu li a{
+	font-size: 20px; /* Tamanho da fonte */
+	color: #425281; /* cor do fonte */
+	padding: 10px 20px; /* Distanciando itens por adicao de padding */
+	border-radius: 10px;
+	opacity: 0.9;
+}
+
+/* Adicionando efeitos nos links */
+.menu li a:hover{
+	text-decoration: none; /* Removendo qualquer decoracao previa */
+	background: #dfe1e5; /* cor do efeito */
+	color: #425281; /* cor da fonte */
+}
+
+/* 
+############################################################################################
+
+Linhas de Conteudo da home
+
+############################################################################################
+*/
+
+/* Ajustando distanciamento de texto na home */
+.home_linha2 h1{
+	text-align:left;
+	margin:50px 0px 0px 0px;
+	line-height:35px;
+}
+.home_linha2 h3{
+	text-align:left;
+	opacity: 0.8;
+	margin:0px];
+	line-height:0px;
+}
+
+/* Editando imagem */
+.home_linha2 img{
+	max-width: 80%; /* Tamanho da imagem */
+	margin-top: 25px;
+	display: block; /* ajustando no centro */
+	margin-left: auto; /* ajustando no centro */
+	margin-right: auto; /* ajustando no centro */
+	border-radius: 10%; /* Suavizando borda */
+}
+
+.home_linha3{
+	margin-top: 30px;
+}
+
+.home_linha3 h3{
+	margin-top: 40px;
+	text-align: center;
+}
+
+.home_linha3 h2{
+	text-align: center;
+	font-size: 15px;
+	line-height: 2;
+	color: #42526e;
+	opacity: 0.8;
+}
+
+.home_linha3 img{
+	max-width: 30%; /* Tamanho da imagem */
+	margin-top: 10px;
+	margin-bottom: 30px;
+	display: block; /* ajustando no centro */
+	margin-left: auto; /* ajustando no centro */
+	margin-right: auto; /* ajustando no centro */
+	border-radius: 10%; /* Suavizando borda */
+}
+
+.footer{
+	background: #1f3c58;
+	color: #ebebeb;
+	padding: 20px 0;
+	text-align: center;
+	font-weight: 100;
+}
+
+
+/* 
+############################################################################################
+
+Lista de Ferramentas
+
+############################################################################################
+*/
+
+/* Removendo padding para o menu enconstar na esquerda */
+.menu-ferramentas{
+	padding: 0;
+}
+
+/* Rotulos da lista de ferramentas */
+/* Mantem uma cor ativa nos rotulos com titulos */
+.menu-ferramentas li.ativo {
+  background-color: #0052cc;
+  color: white;
+  padding: 8px 16px;
+  width: 168px;
+}
+
+/* Lista de ferramentas */
+ul.menu-ferramentas li {
+  text-align: left;
+  list-style-type: none;
+  margin: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+/* Itens da lista de ferramentas*/
+ul.menu-ferramentas li a {
+  display: block; /* empilhando itens */
+  color: #000;
+  padding: 8px 16px;
+}
+
+/* Efeito  ao passar o mouse na lista de ferramentas*/
+ul.menu-ferramentas li a:hover {
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+}
+
+/* 
+############################################################################################
+
+Área de uso da ferramenta
+
+############################################################################################
+*/
+/* Formatando paragrafos de boas-vindas */
+.boas-vindas p {
+ font-size: 15px;
+ line-height: 1.5;
+}
+
+div.div_ferramentas p {
+ font-size: 12px;
+ line-height: 1;
+}
+
+/* Título da ferramenta */
+.ferramenta h2{
+	color: #253858;
+}
+
+/* Parágrafo de explicação da ferramenta*/
+.ferramenta p{
+	color: #253858;
+}
+
+/* Texto para inserir os dados abaixo e conferir os resultados abaixo */
+.ferramenta h4{
+	color: #253858;
+}
+
+/* Editboxs */
+textarea{
+	width: 600px;
+	max-width: 600px;
+}
+
+/* Botões */
+.ferramenta input{
+  float: left;
+  margin: 5px 5px 5px 0px;
+}
+
+/* Formulário de escolha de sequencias (rna, dna ou proteína)*/
+.ferramenta select{
+  float: left;
+  width: 15%;
+  margin: 5px 5px 5px 0px;
+}
